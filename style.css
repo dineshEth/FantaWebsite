@@ -1,255 +1,292 @@
 *{
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 body{
     font-size: 1.6em;
+    font-weight: 300;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 ul{
     list-style: none;
 }
+
+/**-----HEADER--(HERO SECTION)------**/
 .header{
-    margin: auto;
-    /* width: 100%; */
-    height: 100vh;
     background:linear-gradient(120deg, #c3800c,#ff3700);
-    /**NAVBAR**/
+    height: 100vh;
+    margin: auto;
+
+    /**--------NAVBAR----------**/
     .nav{
-        z-index: 100;
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
         align-items: center;
         color: #fff;
-        /* background-color: #212121; */
-        width: 100%;
+        display: flex;
         height: 10vh;
+        justify-content: space-between;
         padding: 0.5rem 2rem;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
 
+
+        /**-----NAV-ITEMS------**/
         .nav__list{
             display: flex;
-            gap: 2rem;
             flex-direction: row;
+            gap: 2rem;
 
             .nav__item{
-                opacity: 0.5;
                 mix-blend-mode: color-dodge;
+                opacity: 0.5;
             }
         }
     }
-
+    /**-----ONE---(SECTION#1)---(HERO)------**/
     .one{
-        padding-top: 20vh;
-        position:relative;
         display: flex;
         justify-content: center;
+        padding-top: 20vh;
+        position:relative;
 
+        /**-----FANTA TEXT------**/
         h1{
-            text-align: center;
+            color: #fff;
+            font-family: 'Noto Sans', sans-serif;
             font-size: 20vw;
             font-weight: 900;
-            color: #fff;
+            text-align: center;
         }
 
+        /**-----HEADER IMAGES------**/
         #fanta-1{
-            z-index: 5;
-            width: 40%;
             position: absolute;
+            transition: all 1s ease;
+            width: 40%;
+            z-index: 5;
         }
         #leaf2{
             left: 0%;
-            top: 20%;
-            z-index: 2;
-            width: 20%;
             position: absolute;
+            top: 20%;
+            width: 20%;
+            z-index: 2;
         }
         #leaf3{
-            right: 10%;
             bottom: -15%;
-            z-index: 2;
-            width: 20%;
-            transform: rotate(120deg);
             position: absolute;
+            right: 10%;
+            transform: rotate(120deg);
+            width: 20%;
+            z-index: 2;
         }
         #orange2{
             bottom: -25%;
-            z-index: 6;
+            position: absolute;
             right: 38%;
             width: 10%;
-            position: absolute;
+            z-index: 6;
         }
         #orange3{
-            left: -5%;
             bottom: 5%;
-            width: 10%;
+            left: -5%;
             position: absolute;
+            width: 10%;
         }
         #orange4{
-            z-index: 3;
-            top: 26%;
             left: 38%;
-            width: 10%;
             position: absolute;
-            
+            top: 26%;
+            width: 10%;
+            z-index: 3;
         }
     }
 }
 
+/**-----MAIN SECTION------**/
 .main{
+    /**-----TWO (SECTION#2)------**/
     .two{
-        padding-top: 10vh;
+        align-items: center;
         background-color: #452005;
+        color: white;
         display: flex;
         flex-direction: row;
-        color: white;
-        align-items: center;
+        padding-top: 10vh;
 
+        /**-----SVG BLOCK------**/
         .left__container{
+            align-items: center;
             display: flex;
             justify-content: center;
-            align-items: center;
             width: 50%;
             svg{
                 margin-top: 20vh;
                 width: 90%;
             }
         }
+
+        /**-----FANTA ABOUT------**/
         .right__container{
-            width: 50%;
             display: flex;
             flex-direction: column;
             gap: 5vh 0;
-
+            width: 50%;
             p{
                 width: 80%;
             }
         }
     }
 
+    /**-----THREE (SECTION#2)------**/
     .three{
-        width: 100%;
-        height: 100vh;
+        align-items: center;
         background-color: #452005;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
         gap: 4rem;
+        height: 100vh;
+        justify-content: space-around;
+        width: 100%;
 
+        /**-----CARD GENERAL------**/
         .card{
-            width: 20vw;
-            height: 60%;
             background-color: #fff;
             border-radius: 1rem;
+            height: 60%;
+            width: 20vw;
         }
         
-        /**L**/
+        /**-----COCOCOLA------**/
         .card:nth-child(1){
+            align-items: center;
             background-color: #dd0d0d;
-            position: relative;
             color: white;
             display: flex;
             flex-direction:column;
-            align-items: center;
             justify-content: end;
             padding: 0.5em 0.2em;
+            position: relative;
 
             .content{
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 gap: 2rem;
+                justify-content: center;
 
                 button{
-                    padding: 0.2em 2rem;
-                    border-radius: 30px;
-                    font-size: 1.2em;
                     background-color: #fff;
-                    color: #dd0d0d;
-                    font-weight: bold;
+                    border-radius: 30px;
                     border:1px solid #dd0d0d;
+                    color: #dd0d0d;
+                    font-size: 1.2em;
+                    font-weight: bold;
                     outline: none;
+                    padding: 0.2em 2rem;
                 }
             }
 
             img{
                 position: absolute;
-                width: 120%;
                 top: -10%;
+                width: 120%;
             }
-            /* background-color: blue; */
         }
+        /**-----FANTA------- **/
         .card:nth-child(2){
-
+            align-items: center;
             background-color: #c35b0c;
-            position: relative;
             color: white;
             display: flex;
             flex-direction:column;
-            align-items: center;
             justify-content: end;
             padding: 0.5em 0.2em;
+            position: relative;
 
             .content{
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 gap: 2rem;
+                justify-content: center;
 
                 button{
-                    /* width: 80%; */
-                    padding: 0.2em 2rem;
-                    border-radius: 30px;
-                    font-size: 1.2em;
                     background-color: #fff;
-                    color: #c35b0c;
-                    font-weight: bold;
+                    border-radius: 30px;
                     border:1px solid #c35b0c;
+                    color: #c35b0c;
+                    font-size: 1.2em;
+                    font-weight: bold;
                     outline: none;
+                    padding: 0.2em 2rem;
                 }
             }
-            /* background-color: blue; */
         }
+        /**-----PEPSI------- **/
         .card:nth-child(3){
+            align-items: center;
             background-color: #031b6b;
-            position: relative;
             color: white;
             display: flex;
             flex-direction:column;
-            align-items: center;
             justify-content: end;
             padding: 0.5em 0.2em;
+            position: relative;
 
             .content{
+                align-items: center;
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 gap: 2rem;
+                justify-content: center;
 
                 button{
-                    /* width: 80%; */
-                    padding: 0.2em 2rem;
-                    border-radius: 30px;
-                    font-size: 1.2em;
                     background-color: #fff;
-                    color: #031b6b;
-                    font-weight: bold;
+                    border-radius: 30px;
                     border:1px solid #031b6b;
+                    color: #031b6b;
+                    font-size: 1.2em;
+                    font-weight: bold;
                     outline: none;
-                    /* border: none; */
+                    padding: 0.2em 2rem;
                 }
             }
 
             img{
                 position: absolute;
-                width: 110%;
                 top: -20%;
+                width: 110%;
             }
         }
     }
+}
+
+/**** -------MEDIA SCREEN MOBILE----- ****/
+@media screen and (width<512px){
+    .header{
+        .nav{
+            .nav__list{
+                display: none;
+            }
+        }
+    }
+    /* .main{
+        .two{
+            flex-direction: column;
+        }
+        .three{
+            flex-direction: column;
+            .card{
+                background-color: #fff;
+                border-radius: 1rem;
+                height: 100vh;
+                width: 90vw;
+            }
+        }
+    } */
 }

@@ -7,13 +7,18 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,900;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Fanta Website</title>
 </head>
 <body>
+    <!-- *********HEADER********** -->
     <header class="header">
+        <!-- **********NAVBAR********** -->
         <nav class="nav">
-            <div class="logo">Fanta</div>
+            <div  class="logo">Fanta</div>
             <ul class="nav__list">
                 <li class="nav__item">Home</li>
                 <li class="nav__item">About</li>
@@ -24,8 +29,9 @@
             <i class="ri-menu-line"></i>
         </nav>
 
+        <!-- **************ONE*********** -->
         <div class="one">
-            <h1>FANTA</h1>
+            <h1 id="fanta">FANTA</h1>
             <img id="fanta-1" src="./assets/fanta-1.png" alt="">
             <img id="leaf2" src="./assets/leaf2.png" alt="" srcset="">
             <img id="leaf3" src="./assets/leaf2.png" alt="" srcset="">
@@ -34,21 +40,23 @@
             <img id="orange4" src="./assets/orange4.webp" alt="">
         </div>
     </header>
+    <!-- *********MAIN SECTION******** -->
     <main class="main">
+        <!-- **************TWO************** -->
         <div class="two">
             <div class="left__container">
                 <!--?xml version="1.0" standalone="no"?-->
                 <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(248, 117, 55, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(251, 168, 31, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M12.5,-13.5C20,-11.8,32.5,-13.2,35.1,-10.2C37.7,-7.3,30.4,0.1,23.7,3.7C17,7.3,11,7.1,7.2,7.5C3.3,8,1.7,9.2,-1.5,11.2C-4.7,13.3,-9.4,16.3,-17.2,17.1C-24.9,18,-35.8,16.6,-37.8,11.9C-39.8,7.3,-32.9,-0.6,-26.6,-5.3C-20.4,-10,-14.9,-11.5,-10.6,-14.2C-6.3,-17,-3.2,-20.9,-0.3,-20.5C2.5,-20,5,-15.2,12.5,-13.5Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path></svg>
             </div>
             <div class="right__container">
-                <h1>FANTA COLDBOC</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ipsum a quod tenetur, neque iure non minima doloremque dignissimos ratione, natus debitis illum reprehenderit obcaecati laboriosam sequi, ad provident numquam quidem. Laborum aliquid amet debitis inventore veritatis consequatur corrupti harum! Laboriosam dicta minus eveniet magnam sequi numquam necessitatibus cupiditate provident!</p>
+                <h1>FANTA COLD</h1>
+                <p>Fanta, a globally recognized carbonated soft drink, originated as a result of Coca-Cola's wartime limitations on ingredients. First created in Germany in the 1940s, Fanta boasts a vibrant, fruity flavor profile, often featuring citrus undertones. Over the years, it has evolved into a diverse range of flavors, satisfying varied taste preferences worldwide. This effervescent beverage is renowned for its refreshing qualities and effervescent bubbles. Enjoyed in over 180 countries, Fanta has become an iconic brand, synonymous with youthful exuberance and a delightful burst of flavor in every sip, making it a popular choice among consumers of all ages.</p>
             </div>
         </div>
-        
+        <!-- ****************THREE************* -->
         <div class="three">
             <div class="card">
-                <img src="./assets/cococola.png" alt="">
+                <img id="cococola" src="./assets/cococola.png" alt="">
                 <div class="content">
                     <h1>Cococola</h1>
                     <button>Buy Now</button>
@@ -61,17 +69,16 @@
                 </div> 
             </div>
             <div class="card">
-                <img src="./assets/pepsi.png" alt="">
+                <img id="pepsi" src="./assets/pepsi.png" alt="">
                 <div class="content">
                     <h1>Pepsi</h1>
                     <button>Buy Now</button>
                 </div> 
             </div>
         </div>
-    </main>
-    
-    
+    </main> 
 </body>
+<!-- ************scripts*********** -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="./main.js"></script>

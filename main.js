@@ -23,22 +23,22 @@ let tl = gsap.timeline({
 });
 
 tl.to('#fanta-1',{
-    top:'192%',
+    top:'170%',
     left:'5%'
 },'one')
 .to('#leaf2',{
     rotate:'120deg',
-    top:'280%',
+    top:'240%',
     left:'80%'
 },'one')
 .to('#leaf3',{
     rotate:'240deg',
-    top:'180%',
+    top:'170%',
     left:'0%'
 },'one')
 .to('#orange2',{
     scale:'1.5',
-    top:'195%',
+    top:'175%',
     left:'75%'
 },'one')
 .to('#orange3',{
@@ -50,7 +50,7 @@ let tl2 = gsap.timeline({
     scrollTrigger:{
         triger:'.three', // selector
         start:'40% 20%',  // scroll start level
-        end:'100% 90%', // scroll start level
+        end:'90% 90%', // scroll start level
         scrub : true,
         markers: false
     }
@@ -81,6 +81,67 @@ tl2.to('#fanta-1',{
 },'three')
 .to('#leaf3',{
     rotate:'380deg',
-    top:'360%',
+    top:'320%',
     left:'25%'
-},'three')
+},'three');
+
+// let tl3 = gsap.timeline({
+//     scrollTrigger:{
+//         triger:'.footer',
+//         start:'81% 40%',
+//         end:'100% 100%',
+//         scrub : true,
+//         markers: true
+//     }
+// });
+
+// tl3.from(
+//     '#x',
+//     {
+//         position:'absolute',
+//         left:'-100%',
+//         duration:'2',
+//         // scale:'1.5',
+//         color:'blue',
+// })
+// .from(
+//     '#github',
+//     {
+//         position:'absolute',
+//         left:'-100%',
+//         duration:'2',
+//         // scale:'1.5',
+//         color:'blue',
+//         delay:'2',
+
+// })
+// .from(
+//     '#instagram',
+//     {
+//         position:'absolute',
+//         left:'-100%',
+//         duration:'2',
+//         delay:'2',
+//         // scale:'1.5',
+//         color:'blue',
+// })
+// .youtube(
+//     '#youtube',
+//     {
+//         position:'absolute',
+//         left:'-100%',
+//         duration:'2',
+//         delay:'2',
+//         // scale:'1.5',
+//         color:'blue',
+// })
+// .from(
+//     '#linkedin',
+//     {
+//         position:'absolute',
+//         left:'-100%',
+//         duration:'2',
+//         delay:'2',
+//         // scale:'1.5',
+//         color:'blue',
+// })

@@ -14,6 +14,9 @@ body::-webkit-scrollbar{
 ul{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 
 /**-----HEADER--(HERO SECTION)------**/
 .header{
@@ -65,7 +68,7 @@ ul{
         /**-----HEADER IMAGES------**/
         #fanta-1{
             position: absolute;
-            transition: all 1s ease;
+            transition: all 2 ease;
             width: 40%;
             z-index: 5;
         }
@@ -106,6 +109,58 @@ ul{
         }
     }
 }
+
+/**--------FOOTER SECTION--------*/
+.footer{
+    width: 100%;
+    background:linear-gradient(120deg, #c3800c,#ff3700);
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 0 2rem;
+
+    .item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+        .tag{
+            /* text-align: center; */
+            color: #fff;
+            font-size: 1.2em;
+        }
+    }
+}
+
+
+/**MEDIA QUERIES MOBILE**/
+
+@media screen and (width < 510px) {
+    .footer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 2rem;
+
+        .item{
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
 
 /**-----MAIN SECTION------**/
 .main{
